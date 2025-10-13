@@ -6,11 +6,11 @@ class DBList(rpyc.Service):
   value = []
 
   def exposed_append(self, data):
-    self.value = self.value + [data]
-    return self.value
+    self.values = self.values + [data]
+    return self.values
 
-  def exposed_value(self):
-    return self.value
+  def exposed_values(self):
+    return self.values
 
 if __name__ == "__main__":
   server = ThreadedServer(DBList(), port = PORT)
