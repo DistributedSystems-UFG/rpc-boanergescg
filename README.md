@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/_8sc1GR8)
 ### Overview
 
 This example illustrates RPC in Python using the RPyC library (https://rpyc.readthedocs.io/).
@@ -14,6 +13,15 @@ Do the following on the two machines (AWS EC2 instances) that you will use for t
 
     sudo apt update
     sudo apt install python3-rpyc
+
+Or, better yet, use Python virtual environments (install pip3 and venv if not yet installed):
+
+    sudo apt update
+    sudo apt install python3-pip
+    sudo apt install python3-venv
+    python3 -m venv myvenv
+    source myvenv/bin/activate
+    pip3 install rpyc
 
 ### Then edit the constRPYC.py file to use the IP address of the machine where you will run the server:
 
